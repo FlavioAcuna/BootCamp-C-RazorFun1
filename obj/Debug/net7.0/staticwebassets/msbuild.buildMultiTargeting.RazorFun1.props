@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\RazorFun1.props" />
+</Project>

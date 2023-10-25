@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Web Page</title>
+</head>
+
+<body>
+    <h1>Here a some delicious foods!</h1>
+    @{
+    List<string> food = new List<string>() { "Apple Pie", "Pizza", "Cinnamon Rolls", "Lasagna","Donuts","Chocolate Cake","Burritos" };
+    foreach(var foods in food){
+    if(foods.StartsWith("c") ||foods.StartsWith("C")  ){
+    <p style="color: red;">@foods</p>
+    }else{
+    <p>@foods</p>  
+    }
+    }
+    }
+</body>
+
+</html>
